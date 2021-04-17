@@ -1,0 +1,114 @@
+<!--Your code goes here-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Algorithms</title>
+        <link rel="stylesheet" type="text/css" href="../css/algorithms.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    
+    <header>
+        <div class= "head">
+                
+                
+                
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+                <a href="../index.html">index</a>
+                <a href="#">Algorithms</a>
+            </div>
+        
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+        </div>
+        <div class="tittle_c">
+
+            <h3>Frontend Project</h3>
+        </div>
+    </div>
+            
+           
+
+        
+    <script src = "../javascript/scripts.js" type="module"></script>
+    </header>
+
+ 
+
+    <body>
+        <div class="max-container">
+            <div class="container">
+                <div class="algos">
+                    <p class="algo-name">Insertion Sort</p>
+                    <p class="user-inst">Array of numbers</p>
+                    <form id="user-input">
+                        <input type="text" class="input-box"><br>
+                    </form>
+                    <button class="myButton" onclick="myFunction()">Insertion Sort</button>
+                    <p class="result">Result goes here: </p>
+                    <p id="user-output"></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="algos">
+                    <p class="algo-name">Factorial</p>
+                    <p class="user-inst">Number(between 1 and 6)</p>
+                    <form id="user-input_" onsubmit="return false;">
+                        <input  type="text" class="input-box" />
+                    </form>
+                    
+                    <button class="myButton" onclick="out_factorial();">Factorial</button>
+                    <div class="salida">
+                    <p class="result">Result goes here: </p>
+                    <script src="../javascript/scripts.js">
+                        
+                    </script>
+                    </div>
+                    <!--<p id="respuesta"></p>-->
+                </div>
+            </div>
+        </div>
+        <!--
+            <form id="form" onsubmit="return false;">
+                <input  type="text" id="userInput" />
+                <input  type="submit" onclick="factorial();" />
+            </form>
+            <script src="../javascript/app.js">
+                function out_factorial(){
+                    var input = document.getElementById("userInput").value;
+                    var n_input = parseInt(input);
+                    n_output = factorial(n_input);
+                    document.write(n_output)
+                }
+            </script>
+        -->
+        <div class="max-container">
+            <div class="container">
+                <div class="algos">
+                    <p class="algo-name">Fibonacci</p>
+                    <p class="user-inst">Choose a number</p>
+                    <input type="text" class="input-box"><br>
+                    <button type="button" class="myButton">Insertion Sort</button>
+                    <p class="result">Result goes here: </p>
+                    <p id="respuesta"></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="algos">
+                    <p class="algo-name">Evaluation</p>
+                    <p class="user-inst">Write any mathematical expression</p>
+                    <input type="text" class="input-box"><br>
+                    <button type="button" class="myButton">Insertion Sort</button>
+                    <p class="result">Result goes here: </p>
+                    <p id="respuesta"></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+<html>
+
