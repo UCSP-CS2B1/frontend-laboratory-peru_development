@@ -11,9 +11,7 @@
     
     <header>
         <div class= "head">
-                
-                
-                
+                            
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
                 <a href="../index.html">index</a>
@@ -28,15 +26,10 @@
             <h3>Frontend Project</h3>
         </div>
     </div>
-            
-           
-
-        
+ 
     <script src = "../javascript/scripts.js" type="module"></script>
     <script src = "../javascript/app.js" type="module"></script>
     </header>
-
- 
 
     <body>
         <div class="max-container">
@@ -45,7 +38,7 @@
                     <p class="algo-name">Insertion Sort</p>
                     <p class="user-inst">Array of numbers</p>
                     <form id="user-input">
-                        <input type="text" class="input-box"><br>
+                        <input type="text" class="input-box" placeholder="1,2,3,4,5,6,7"><br>
                     </form>
                     <button class="myButton" onclick="getSort()">Insertion Sort</button>
                     <p class="result">Result goes here: </p>
@@ -58,9 +51,8 @@
                     <p class="algo-name">Factorial</p>
                     <p class="user-inst">Number(between 1 and 6)</p>
                     <form  onsubmit="return false;">
-                        <input id="user-input2" type="number"  placeholder="defautl 0" class="input-box" />
+                        <input id="user-input2" type="number"  placeholder="default 0" class="input-box" />
                     </form>
-                    
                     <button class="myButton" onclick="out_factorial();">Factorial</button>
                     <div class="salida">
                     <p class="result" id ="result_fact">Result goes here: </p>
@@ -71,22 +63,8 @@
                     <!--<p id="respuesta"></p>-->
                 </div>
             </div>
-        </div>
-        <!--
-            <form id="form" onsubmit="return false;">
-                <input  type="text" id="userInput" />
-                <input  type="submit" onclick="factorial();" />
-            </form>
-            <script src="../javascript/app.js">
-                function out_factorial(){
-                    var input = document.getElementById("userInput").value;
-                    var n_input = parseInt(input);
-                    n_output = factorial(n_input);
-                    document.write(n_output)
-                }
-            </script>
-        -->
-        <div class="max-container">
+        
+        
             <div class="container">
                 <div class="algos">
                     <p class="algo-name">Fibonacci</p>

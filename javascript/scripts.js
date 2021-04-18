@@ -58,16 +58,7 @@ function evaluation(expression) {
       return "Resultado negativo";
 }
 
-//Seccion Insertion Sort
-/*function out_sort() {
-    var input = document.getElementById("sort_input").value;
-    //convertir entrada en array
-    document.getElementById("result_sort").innerHTML = getSort(input);
-}*/
-/*function Array(val) {
-    var Arr = [];
-    
-}*/
+
 function insertion_sort(numbers) {
   let n = numbers.length;
   let pos, aux;
@@ -89,7 +80,6 @@ function getSort() {
   var stuff = document.getElementById("user-input").elements[0].value;
   var len = stuff.length;
   var sortArray = [];
-  //"4,2,1,3" (7 + 1) / 2 = 4
   var cont = 0;
   var temp = "";
   for (i = 0; i < len; i++)
@@ -104,7 +94,6 @@ function getSort() {
       }
     }
    sortArray[cont] = parseInt(temp);
-
   var newArray = insertion_sort(sortArray);
   var cadena = "";
   for (i = 0; i < sortArray.length; i++)
@@ -115,7 +104,5 @@ function getSort() {
       cadena += ',';
     }
   }
-
-  //console.log(len);
   document.getElementById("user-output").innerHTML = cadena;
 }
