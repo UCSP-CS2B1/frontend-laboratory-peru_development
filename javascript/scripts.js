@@ -17,7 +17,6 @@ function out_factorial(){
     document.getElementById("result_fact").innerHTML = factorial(input);
     
 }
-
 function factorial(number) {
     var total = 1;
     for (var i = 1; i <= number; i++) {
@@ -28,13 +27,11 @@ function factorial(number) {
 
 
 //Seccion Fibonacci
-
 function out_fibo(){
   var input = document.getElementById("fibo_input").value;
   document.getElementById("result_fibo").innerHTML = fibonacci(input);
   
 }
-
 function fibonacci(num) {
   var a = 0, b = 1, temp;
   while (num >= 0){
@@ -51,9 +48,7 @@ function fibonacci(num) {
 function out_eval() {
     var input = document.getElementById("eval_input").value;
     document.getElementById("result_eval").innerHTML = evaluation(input);
-
 }
-
 function evaluation(expression) {
   var number;
   number = eval(expression);
@@ -63,8 +58,16 @@ function evaluation(expression) {
       return "Resultado negativo";
 }
 
-
 //Seccion Insertion Sort
+/*function out_sort() {
+    var input = document.getElementById("sort_input").value;
+    //convertir entrada en array
+    document.getElementById("result_sort").innerHTML = getSort(input);
+}*/
+/*function Array(val) {
+    var Arr = [];
+    
+}*/
 function insertion_sort(numbers) {
   let n = numbers.length;
   let pos, aux;
@@ -88,20 +91,29 @@ function getSort() {
   var sortArray = [];
   //"4,2,1,3" (7 + 1) / 2 = 4
   var cont = 0;
+  var temp = "";
   for (i = 0; i < len; i++)
   {
-    if (stuff[i] != ',')
-    {
-      sortArray[cont] = parseInt(stuff[i]);
-      cont++;
+      if (stuff[i] == ',' ) {
+          sortArray[cont] = parseInt(temp);
+          temp = "";
+          cont++;
+      }
+      else { 
+        temp = temp + stuff[i];
+      }
     }
-  }
+   sortArray[cont] = parseInt(temp);
 
   var newArray = insertion_sort(sortArray);
   var cadena = "";
   for (i = 0; i < sortArray.length; i++)
   {
     cadena += newArray[i];
+    if (i != sortArray.length - 1)
+    {
+      cadena += ',';
+    }
   }
 
   //console.log(len);

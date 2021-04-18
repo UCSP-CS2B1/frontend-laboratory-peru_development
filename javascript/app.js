@@ -37,11 +37,11 @@ function factorial(number) {
 function fibonacci(number) {
     
     var a = 0, b = 1, temp;
-    while (num >= 0){
+    while (number >= 0){
         temp = a;
         a = a + b;
         b = temp;
-        num--;
+        number--;
     }
     return b;
 
