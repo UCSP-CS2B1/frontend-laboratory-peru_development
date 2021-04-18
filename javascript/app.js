@@ -2,7 +2,7 @@
 // Returns a sorted array
 function insertion_sort(numbers) {
 
-    let n = numbers.length();
+    let n = numbers.length;
     let pos, aux;
 
     for(let i=0; i < n; i++)
@@ -25,8 +25,9 @@ function insertion_sort(numbers) {
 // Returns a single integer
 function factorial(number) {
     var total = 1;
-    for (i = 1; i <= number; i++) {
+    for (i = number; i > 0; i--) {
         total = total * i;
+
     }
     return total;
 }

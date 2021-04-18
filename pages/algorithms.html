@@ -6,6 +6,7 @@
         <title>Algorithms</title>
         <link rel="stylesheet" type="text/css" href="../css/algorithms.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        
     </head>
     
     <header>
@@ -32,6 +33,7 @@
 
         
     <script src = "../javascript/scripts.js" type="module"></script>
+    <script src = "../javascript/app.js" type="module"></script>
     </header>
 
  
@@ -45,7 +47,7 @@
                     <form id="user-input">
                         <input type="text" class="input-box"><br>
                     </form>
-                    <button class="myButton" onclick="myFunction()">Insertion Sort</button>
+                    <button class="myButton" onclick="getSort()">Insertion Sort</button>
                     <p class="result">Result goes here: </p>
                     <p id="user-output"></p>
                 </div>
@@ -55,13 +57,13 @@
                 <div class="algos">
                     <p class="algo-name">Factorial</p>
                     <p class="user-inst">Number(between 1 and 6)</p>
-                    <form id="user-input_" onsubmit="return false;">
-                        <input  type="text" class="input-box" />
+                    <form  onsubmit="return false;">
+                        <input id="user-input2" type="number"  placeholder="defautl 0" class="input-box" />
                     </form>
                     
                     <button class="myButton" onclick="out_factorial();">Factorial</button>
                     <div class="salida">
-                    <p class="result">Result goes here: </p>
+                    <p class="result" id ="result_fact">Result goes here: </p>
                     <script src="../javascript/scripts.js">
                         
                     </script>
@@ -89,10 +91,17 @@
                 <div class="algos">
                     <p class="algo-name">Fibonacci</p>
                     <p class="user-inst">Choose a number</p>
-                    <input type="text" class="input-box"><br>
-                    <button type="button" class="myButton">Insertion Sort</button>
-                    <p class="result">Result goes here: </p>
-                    <p id="respuesta"></p>
+                    <form onsubmit="return false;">
+                        <input id="fibo_input" type ="number" placeholder="Number" class ="input-box"/>
+                    </form>
+
+                    <button class="myButton" onclick="out_fibo();">Fibonacci</button>
+                    <div class="salida">
+                    <p class="result" id ="result_fibo">Result goes here: </p>
+                    <script src="../javascript/scripts.js">
+                        
+                    </script>
+                    </div>
                 </div>
             </div>
 
@@ -100,10 +109,16 @@
                 <div class="algos">
                     <p class="algo-name">Evaluation</p>
                     <p class="user-inst">Write any mathematical expression</p>
-                    <input type="text" class="input-box"><br>
-                    <button type="button" class="myButton">Insertion Sort</button>
-                    <p class="result">Result goes here: </p>
-                    <p id="respuesta"></p>
+                    <form onsubmit="return false;">
+                        <input id="eval_input"  placeholder="2 + 3 * 5 - 100" class="input-box" />
+                    </form>
+                    <button class="myButton" onclick="out_eval();">Evaluate Expression</button>
+                    <div class="salida">
+                        <p class="result" id="result_eval">Result goes here: </p>
+                        <script src="../javascript/scripts.js">
+
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
