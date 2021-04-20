@@ -2,37 +2,60 @@
 // Returns a sorted array
 function insertion_sort(numbers) {
 
-    //Write your code here
+    let n = numbers.length;
+    let pos, aux;
 
-    return [-1];
+    for(let i=0; i < n; i++)
+    {
+        pos = i;
+        aux = numbers[i];
+
+        while( (pos > 0) && (numbers[pos-1] > aux) ) //en primera ocacion salta, en la segunda entra y compara actual con anterior
+        {
+            numbers[pos] = numbers[pos-1]; // cambio
+            pos--; // para regresar y cambiar el valor del anterior
+        }
+        numbers[pos] = aux; // cambio2
+    }
+    return numbers;
 }
 
 
 // Param number: single integer
 // Returns a single integer
 function factorial(number) {
+    var total = 1;
+    for (i = number; i > 0; i--) {
+        total = total * i;
 
-    //Write your code here
-
-    return -1;
+    }
+    return total;
 }
 
 // Param number: single integer
 // Returns a single integer
 function fibonacci(number) {
+    
+    var a = 0, b = 1, temp;
+    while (number >= 0){
+        temp = a;
+        a = a + b;
+        b = temp;
+        number--;
+    }
+    return b;
 
-    //Write your code here
-
-    return -1
-}
+  }
 
 // Param expression: string containing a mathematical expression
 // Returns an integer value
 function evaluation(expression) {
-
-    //Write your code here
-
-    return -1
+    var number;
+    number = eval(expression);
+    if(number > 0)
+        return number;
+    else
+        return -1;
 }
 
 
